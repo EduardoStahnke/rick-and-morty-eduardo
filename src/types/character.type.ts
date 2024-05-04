@@ -2,7 +2,9 @@ export type CharacterType = {
     id: number;
     name: string;
     image: string;
-    episode: string[];
+    status: string;
+    species: string;
+    gender: string;
   };
   
   export type PageableCharacterType = {
@@ -12,6 +14,7 @@ export type CharacterType = {
       next: string;
       prev: string;
     };
-    results: CharacterType[];
+    results: CharacterType[] | [];
   };
+  
   
